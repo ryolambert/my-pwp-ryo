@@ -52,7 +52,7 @@
 						<h2><i class="fa fa-user"></i></span> Persona</h2>
 						<hr/>
 					<div class="persona-content">
-						<img src="marcus-sparkes.jpg" class="center-block box-shadow" alt="Headshot of Marcus Sparkes"/>
+						<img src="marcus-sparkes.jpg" class="img-responsive block-center box-shadow" alt="Headshot of Marcus Sparkes"/>
 						<hr/>
 						<h3 id="marcussparkes"><em>Marcus Sparkes</em></h3>
 
