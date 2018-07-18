@@ -26,8 +26,12 @@
 	color: white;
 }
 
+.persona-content {
+	margin: 1% 5% 1% 5%;
+}
+
 hr {
-	width: 400px;
+	width: 97%;
 	border-top: 1px solid #96E6B3;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
@@ -44,13 +48,10 @@ h1 {
 }
 
 h2 {
-
+	margin-left: 2%;
 	color: #464E47;
-
 	font-family: 'Oswald', sans-serif;
-
 	font-size: 30px;
-
 	font-weight: 300;
 
 }

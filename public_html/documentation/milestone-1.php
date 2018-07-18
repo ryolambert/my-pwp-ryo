@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div class="container">
-				<h1><u>PWP Milestone One</u></h1>
+				<h1 class="block center"><u>PWP Milestone One</u></h1>
 				<div class="well col-xs-12 col-md-12 col-lg-12 box-shadow">
 					<div>
 						<h2 id="purposeaudiencegoalanswers">Purpose, Audience, Goal Answers</h2>
@@ -49,8 +49,9 @@
 				<p></p>
 			<div class="container">
 				<div class="well col-xs-12 col-md-12 col-lg-12 box-shadow">
-						<h2><i class="fa fa-user"></i></span> <u>Persona</u></h2>
-
+						<h2><i class="fa fa-user"></i></span> Persona</h2>
+						<hr/>
+					<div class="persona-content">
 						<img src="marcus-sparkes.jpg" class="center-block box-shadow" alt="Headshot of Marcus Sparkes"/>
 						<hr/>
 						<h3 id="marcussparkes"><em>Marcus Sparkes</em></h3>
@@ -116,6 +117,7 @@
 
 						<p>As a user, I need to determine quickly whether this candidate is qualified for the full-stack developer
 							position.</p>
+					</div>
 				</div>
 			</div>
 
