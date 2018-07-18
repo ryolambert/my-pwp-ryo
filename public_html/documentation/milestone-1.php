@@ -107,7 +107,7 @@
 
 						<p>Marc is looking to hire a junior full-stack developer with two to three years experience. His company is
 							setting a rapid pace and sets to take on another dozen major clients in the next quarter alone. He hopes to
-							start taking on at least 1-2 developers quickly. </p>
+							get at least 2-3 developers and integrated and up to speed with their current project teams within the next 2 months. </p>
 
 						<p>Right now, he has taken time away as project lead and is reviewing applications, referrals, and sending out
 							interview requests to potential hires. After seeing my application, portfolio site, and reviewing a few
