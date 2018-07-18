@@ -1,0 +1,88 @@
+.home-page {
+	background-image: url(https://images.unsplash.com/photo-1527643448713-eea496619e3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=03d10151edc9ba2fb460343f52b6b6b5&auto=format&fit=crop&w=1234&q=80);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 300px;
+
+}
+
+.box-shadow{
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
+	box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
+}
+
+.content{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1);
+	font-family: 'Space Mono', monospace;
+	color: white;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #96E6B3;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+h1 {
+	color: #111;
+	font-family: 'Oswald', sans-serif;
+	sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin-top: 10%;
+}
+
+h2 {
+
+	color: #464E47;
+
+	font-family: 'Oswald', sans-serif;
+
+	font-size: 30px;
+
+	font-weight: 300;
+
+}
+
+h3 {
+	color: #568259;
+	font-family: 'Oswald', sans-serif;
+	sans-serif;
+	font-size: 24px;
+
+}
+
+p {
+	color: #464E47;
+	font-family: 'Space Mono', monospace;
+	sans-serif;
+	font-size: 14px;
+	text-justify: inter-word;
+}
+
+ol {
+	color: #464E47;
+	font-family: 'Space Mono', monospace;
+	sans-serif;
+	font-size: 14px;
+	text-justify: inter-word;
+}
+
+li {
+	color: #464E47;
+	font-family: 'Space Mono', monospace;
+	sans-serif;
+	font-size: 14px;
+	text-justify: inter-word;
+}
