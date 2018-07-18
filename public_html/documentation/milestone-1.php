@@ -16,7 +16,7 @@
 				<div class="well col-xs-12 col-md-12 col-lg-12 box-shadow">
 					<div>
 						<h2 id="purposeaudiencegoalanswers">Purpose, Audience, Goal Answers</h2>
-
+						<hr/>
 						<ol>
 							<li><p><strong>Purpose</strong>: To put on display the passion I have for the creative applications of
 									technology. As well as, showcase unique talents and skills as a fullstack web developer, front-end
@@ -43,7 +43,6 @@
 							</li>
 						</ol>
 
-						<hr/>
 					</div>
 				</div>
 			</div>
@@ -53,7 +52,7 @@
 						<h2><i class="fa fa-user"></i></span> <u>Persona</u></h2>
 
 						<img src="marcus-sparkes.jpg" class="center-block box-shadow" alt="Headshot of Marcus Sparkes"/>
-
+						<hr/>
 						<h3 id="marcussparkes"><em>Marcus Sparkes</em></h3>
 
 						<p>39 years old, Male</p>
