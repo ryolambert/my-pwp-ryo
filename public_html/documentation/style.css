@@ -7,6 +7,10 @@
 
 }
 
+body {
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+}
+
 .box-shadow{
 	-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
 	-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
@@ -40,7 +44,6 @@ hr {
 h1 {
 	color: #111;
 	font-family: 'Oswald', sans-serif;
-	sans-serif;
 	font-size: 3em;
 	font-weight: bold;
 	letter-spacing: -1px;
@@ -58,7 +61,6 @@ h2 {
 h3 {
 	color: #568259;
 	font-family: 'Oswald', sans-serif;
-	sans-serif;
 	font-size: 24px;
 
 }
@@ -66,7 +68,6 @@ h3 {
 p {
 	color: #464E47;
 	font-family: 'Space Mono', monospace;
-	sans-serif;
 	font-size: 14px;
 	text-justify: inter-word;
 }
@@ -74,7 +75,6 @@ p {
 ol {
 	color: #464E47;
 	font-family: 'Space Mono', monospace;
-	sans-serif;
 	font-size: 14px;
 	text-justify: inter-word;
 }
@@ -82,7 +82,6 @@ ol {
 li {
 	color: #464E47;
 	font-family: 'Space Mono', monospace;
-	sans-serif;
 	font-size: 14px;
 	text-justify: inter-word;
 }

@@ -8,6 +8,8 @@
 				integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Oswald|Space+Mono" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title>PWP Milestone 1</title>
 	</head>
 	<body>
@@ -51,7 +53,7 @@
 		<p></p>
 		<div class="container">
 			<div class="well col-xs-12 col-md-12 col-lg-12 box-shadow">
-				<h2><i class="fa fa-user"></i></span> Persona</h2>
+				<h2><i class="fa fa-user"></i>Persona</h2>
 				<hr/>
 				<div class="persona-content">
 					<img src="marcus-sparkes.jpg" class="img-responsive center-block box-shadow"
@@ -136,8 +138,7 @@
 		</div>
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 	</body>
 </html>
