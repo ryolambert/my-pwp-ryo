@@ -12,7 +12,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title>PWP Milestone 2</title>
 	</head>
-	<body>
+	<body class="background-gradient">
 		<div class="container">
 			<h1><u>PWP Milestone Two</u></h1>
 			<div class="well col-xs-12 col-md-12 col-lg-12 box-shadow">
