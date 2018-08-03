@@ -46,11 +46,11 @@
 				<div class="persona-content">
 					<h3>Desktop Wireframe</h3>
 					<img src="Desktop.png" class="img-responsive center-block box-shadow"
-						  alt="Desktop Wireframe"/>
+						  alt="Desktop Wireframe" width="1000px"/>
 					<hr/>
 					<h3>Mobile Wireframe</h3>
 					<img src="Mobile.png" class="img-responsive center-block box-shadow"
-						  alt="Mobile Wireframe"/>
+						  alt="Mobile Wireframe" width="1000px"/>
 					<hr/>
 				</div>
 		</div>
