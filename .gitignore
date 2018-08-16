@@ -30,6 +30,7 @@ vendor/bundle
 .settings
 .tmproj
 *.esproj
+.sass-cache
 *.sublime-project
 *.sublime-workspace
 nbproject
