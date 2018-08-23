@@ -77,40 +77,6 @@ a:focus {
 	pointer-events: none;
 }
 
-/* Header */
-
-.demos {
-	position: relative;
-	display: block;
-	align-self: end;
-	text-align: center;
-	grid-area: demos;
-	margin-bottom: 0.5em;
-}
-
-.demo {
-	margin: 0 0.15em;
-}
-
-.demo:hover,
-.demo:focus {
-	opacity: 0.5;
-}
-
-.demo span {
-	white-space: nowrap;
-	text-transform: lowercase;
-	pointer-events: none;
-}
-
-.demo span::before {
-	content: '#';
-}
-
-a.demo--current {
-	pointer-events: none;
-}
-
 /* Top Navigation Style */
 
 .global-menu {
@@ -483,6 +449,7 @@ a.demo--current {
 }
 
 .hamburger.is-opened-navi .hamburger__line-in--02 {
+	-webkit-transition-delay: 0.05s;
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }

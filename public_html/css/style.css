@@ -4,11 +4,12 @@
 *::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 html {
 	font-size: 62.5%;
+
 }
 
 @media (max-width: 75em) {
@@ -37,6 +38,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+	min-height: 100vh;
+	overflow: hidden;
+}
 
 /** Fonts **/
 h1 {
@@ -665,5 +670,13 @@ li {
 .screen-full {
 	height: 100vh;
 	width: 100vw;
+	padding: 0;
 	margin: 5vw;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

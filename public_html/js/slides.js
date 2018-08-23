@@ -70,8 +70,9 @@
       this.DOM.svg.setAttribute('viewbox', `0 0 ${this.rect.width} ${this.rect.height}`);
       this.DOM.svg.innerHTML = `
             <defs>
-            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#09012d"/>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" stop-color="#8000ff"/>
+                <stop offset="45%" stop-color="#b3f0ff"
                 <stop offset="100%" stop-color="#0f2b73"/>
             </linearGradient>
             </defs>
@@ -100,13 +101,19 @@
       }
     }
     initEvents() {
-      this.DOM.nextCtrl.addEventListener('click', () => this.navigate('next'));
-      this.DOM.prevCtrl.addEventListener('click', () => this.navigate('prev'));
+      this.DOM.nextCtrl.addEventListener('click' , () => this.navigate('next'));
+      this.DOM.prevCtrl.addEventListener('click' , () => this.navigate('prev'));
 
       window.addEventListener('resize', debounce(() => {
         this.rect = this.DOM.el.getBoundingClientRect();
         this.updateFrame();
       }, 20));
+
+      // //swipe-right touch event next imge in slides
+      //  this.DOM.addEventListener('swipe-right', () => this.navigate('next'));
+      //
+		//  // swipe-left touch event previous image in slides
+		//  this.DOM.addEventListener('swipe-left'), () => this.navigate('prev'));
 
       document.addEventListener('keydown', (ev) => {
         const keyCode = ev.keyCode || ev.which;

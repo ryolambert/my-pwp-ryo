@@ -21,6 +21,7 @@
 				rel="stylesheet"/>
 
 		<!-- Link to personal stylized CSS -->
+		<!--<link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; CSS reset &ndash;&gt;-->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 		<link rel="stylesheet" type="text/css" href="css/slides.css"/>
@@ -119,12 +120,12 @@
 			</div>
 		</div>
 		<section class="content">
-			<div class="container mx-auto ">
-				<div id="2" class="row align-self-center">
+			<div id="2" class="container mx-auto">
+				<div class="row align-items-center justify-content-center">
 					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 my-5  mx-auto">
 
 					</div>
-					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 my-5  mx-auto">
+					<div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 my-5 full mx-auto">
 						<h1>ABOUT ME</h1>
 						<p> Seven of Nine: I understand the concept of humor. It may not be apparent
 							but I am often amused by human behavior. The Doctor: You heard the man. Run
@@ -141,7 +142,8 @@
 				</div>
 			</div>
 
-			<div id="3" class="row align-self-center my-5 screen-full">
+			<div id="3" class="container">
+				<div class="row align-items-center justify-content-center">
 
 				<div class="col-lg-1 col-md-1 col-sm-1 order-1 mr-1">
 					<h4 class="vertical">デザイン</h4>
@@ -158,7 +160,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-5 col-md-5 col-sm-12 order-last demo-6">
+				<div class="col-lg-5 col-md-5 col-12 order-last demo-6">
 					<div class="slideshow">
 						<div class="slides slides--images">
 							<div class="slide slide--current">
@@ -199,9 +201,11 @@
 					</div>
 				</div>
 			</div>
+			</div>
 
-			<div id="4" class="row justify-content-center screen-full">
-				<div class="col-lg-5 col-md-5 col-sm-12 demo-6">
+			<div id="4" class="container">
+				<div class="row align-items-center justify-content-center">
+				<div class="col-lg-5 col-md-5 col-sm-12 order-first demo-6">
 					<div class="slideshow_2">
 						<div class="slides slides--images">
 							<div class="slide slide--current">
@@ -235,13 +239,13 @@
 							</div>
 						</div>
 						<nav class="slidenav">
-							<button class="slidenav__item slidenav__item--prev">Previous</button>
+							<button class="slidenav__item slidenav__item--prev"><</button>
 							<span>/</span>
-							<button class="slidenav__item slidenav__item--next">Next</button>
+							<button class="slidenav__item slidenav__item--next">></button>
 						</nav>
 					</div>
 				</div>
-				<div class="col-8 col-md-5 col-lg-5">
+				<div class="col-6 order-1">
 					<h1>CODING</h1>
 					<p> Seven of Nine: I understand the concept of humor. It may not be apparent but
 						I am often amused by human behavior. The Doctor: You heard the man. Run along.
@@ -252,30 +256,33 @@
 						than everybody else.
 					</p>
 				</div>
-				<div class="col-1 col-md-1 col-lg-1">
+				<div class="col-1 order-2">
 					<h4 class="vertical">コード</h4>
 				</div>
 			</div>
-
-			<div id="5" class="row">
+			</div>
+			<div id="5" class="container">
+			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 my-5 my-3 mx-auto">
 				</div>
 			</div>
-		</section>
+			</div>
+
 
 		<footer class=" text-center mt-5 py-4">
 			<div class="social-btns">
-				<a href="https://twitter.com/_RelevantDesign" class="btn twitter"><i class="fab fa-twitter"></i></a>
-				<a href="https://github.com/ryolambert" class="btn github"><i class="fab fa-github"></i></a>
-				<a href="https://codepen.io/Relevant_Design/" class="btn codepen"><i class="fab fa-codepen"></i></a>
-				<a href="https://dribbble.com/Relevant_Design" class="btn dribbble"><i class="fab fa-dribbble"></i></a>
-				<a href="https://linkedin.com/in/ryolambert" class="btn linkedin"><i class="fab fa-linkedin"></i></a>
-				<a href="https://instagram.com/relevant_design" class="btn instagram"><i class="fab fa-instagram"></i></a>
+				<a target="_blank" href="https://twitter.com/_RelevantDesign" class="btn twitter"><i class="fab fa-twitter"></i></a>
+				<a target="_blank" href="https://github.com/ryolambert" class="btn github"><i class="fab fa-github"></i></a>
+				<a target="_blank" href="https://codepen.io/Relevant_Design/" class="btn codepen"><i class="fab fa-codepen"></i></a>
+				<a target="_blank" href="https://dribbble.com/Relevant_Design" class="btn dribbble"><i class="fab fa-dribbble"></i></a>
+				<a target="_blank" href="https://linkedin.com/in/ryolambert" class="btn linkedin"><i class="fab fa-linkedin"></i></a>
+				<a target="_blank" href="https://instagram.com/relevant_design" class="btn instagram"><i class="fab fa-instagram"></i></a>
 			</div>
 		</footer>
+		</section>
 		<script type="x-shader/x-fragment" id="fragmentShader">
 		precision highp float;
-	
+
 		uniform float uTime;
 		uniform vec2 uMousePosition;
 		uniform float uHue;
@@ -283,17 +290,17 @@
 		uniform float uDensity;
 		uniform float uDisplacement;
 		uniform float uGradient;
-		
+
 		varying vec2 vUv;
-	
+
 		float mod289(float x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
 		vec4 mod289(vec4 x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
 		vec4 perm(vec4 x){return mod289(((x * 34.0) + 1.0) * x);}
-	
+
 		float rand(vec2 co){
 			return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
 		}
-	
+
 		float hue2rgb(float f1, float f2, float hue) {
 				if (hue < 0.0)
 						hue += 1.0;
@@ -310,57 +317,57 @@
 						res = f1;
 				return res;
 		}
-	
+
 		vec3 hsl2rgb(vec3 hsl) {
 				vec3 rgb;
-	
+
 				if (hsl.y == 0.0) {
 						rgb = vec3(hsl.z); // Luminance
 				} else {
 						float f2;
-	
+
 						if (hsl.z < 0.5)
 								f2 = hsl.z * (1.0 + hsl.y);
 						else
 								f2 = hsl.z + hsl.y - hsl.y * hsl.z;
-	
+
 						float f1 = 2.0 * hsl.z - f2;
-	
+
 						rgb.r = hue2rgb(f1, f2, hsl.x + (1.0/3.0));
 						rgb.g = hue2rgb(f1, f2, hsl.x);
 						rgb.b = hue2rgb(f1, f2, hsl.x - (1.0/3.0));
 				}
 				return rgb;
 		}
-	
+
 		vec3 hsl2rgb(float h, float s, float l) {
 				return hsl2rgb(vec3(h, s, l));
 		}
-	
+
 		float noise(vec3 p){
 				vec3 a = floor(p);
 				vec3 d = p - a;
 				d = d * d * (3.0 - 2.0 * d);
-	
+
 				vec4 b = a.xxyy + vec4(0.0, 1.0, 0.0, 1.0);
 				vec4 k1 = perm(b.xyxy);
 				vec4 k2 = perm(k1.xyxy + b.zzww);
-	
+
 				vec4 c = k2 + a.zzzz;
 				vec4 k3 = perm(c);
 				vec4 k4 = perm(c + 1.0);
-	
+
 				vec4 o1 = fract(k3 * (1.0 / 41.0));
 				vec4 o2 = fract(k4 * (1.0 / 41.0));
-	
+
 				vec4 o3 = o2 * d.z + o1 * (1.0 - d.z);
 				vec2 o4 = o3.yw * d.x + o3.xz * (1.0 - d.x);
-	
+
 				return o4.y * d.y + o4.x * (1.0 - d.y);
 		}
-	
+
 		vec2 fade(vec2 t) {return t*t*t*(t*(t*6.0-15.0)+10.0);}
-	
+
 		float cnoise(vec2 P){
 				vec4 Pi = floor(P.xyxy) + vec4(0.0, 0.0, 1.0, 1.0);
 				vec4 Pf = fract(P.xyxy) - vec4(0.0, 0.0, 1.0, 1.0);
@@ -393,49 +400,48 @@
 				float n_xy = mix(n_x.x, n_x.y, fade_xy.y);
 				return 2.3 * n_xy;
 		}
-	
+
 		void main () {
 			float mouseDistance = length(vUv - uMousePosition);
 			float t = uTime * .005;
 			float elevation =  vUv.y * uDensity * 30.0;
-			
+
 			float shadow = smoothstep(0.0, .3 + sin(t * 5.0 * 3.14) * .1 , mouseDistance);
 			elevation += shadow * 5.0;
-			
+
 			float displacement = cnoise( vec2( t + vUv.y * 2.0, t + vUv.x * 3.0 )) * uDisplacement * 3.0 ;
-	
+
 			elevation += displacement * 4.0;
 			elevation *= 2.0 + cnoise( vec2( t + vUv.y * 1.0, t + .5)) * 2.0 ;
-			
+
 			//elevation += cnoise ( vec2 (elevation * .1, t * 3.0) );
-	
+
 			float light = .9 + fract(elevation) ;
 			light *= .9 + (1.0 - (displacement * displacement)) * .1;
 			elevation = floor(elevation);
 			//elevation += uGradient * .25;
-		
+
 			float hue =  uHue + shadow * .1 + cnoise( vec2( elevation * .10, .1 + t)) * uHueVariation;
 			float saturation = .6;;
 			float brightness =  - (1.0 - shadow) * .1 + .5  - smoothstep( 0.0, .9,  cnoise( vec2( elevation * .5, .4 + t * 5.0)) ) * .1;
-	
-	
+
+
 			vec3 hslCol = vec3( hue, saturation, brightness);
 			vec3 col = hsl2rgb(hslCol) * vec3(light, 1.0, 1.0);
-			
-			
+
+
 			/* circle:
 			float d = length(vUv- vec2(.5,.5));
 			float radius = .1;// + (t * .1);
 			float stroke = 0.001;
 			float smoothing = .0005;
 			d = smoothstep(radius, radius+smoothing, d) - smoothstep(radius+stroke, radius+stroke+smoothing, d);
-			
+
 			col += d;// * 10.0;
 			*/
-			
+
 			gl_FragColor = vec4(col, 1.);
 		}
-
 
 
 		</script>
@@ -444,19 +450,19 @@
 	  // attributes of our mesh
 		attribute vec3 position;
 		attribute vec2 uv;
-	
+
 		// built-in uniforms from ThreeJS camera and Object3D
 		uniform mat4 projectionMatrix;
 		uniform mat4 modelViewMatrix;
 		uniform mat3 normalMatrix;
-	
+
 		// custom uniforms to build up our tubes
 		uniform float uTime;
 		uniform vec2 uMousePosition;
-	
+
 		// pass a few things along to the vertex shader
 		varying vec2 vUv;
-	
+
 		void main() {
 			vUv = uv;
 			vec4 pos = vec4(position, 1.0);
@@ -464,14 +470,13 @@
 		}
 
 
-
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
-		<script src="js/waves.js"></script>
-		<script src="js/nav.js"></script>
-		<script src="js/easings.js"></script>
-		<script src="js/overlay.js"></script>
+		<script type="text/javascript" src="js/waves.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/easings.js"></script>
+		<script type="text/javascript" src="js/overlay.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/slides.js"></script>
