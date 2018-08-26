@@ -109,11 +109,11 @@
         this.updateFrame();
       }, 20));
 
-      // //swipe-right touch event next imge in slides
-      //  this.DOM.addEventListener('swipe-right', () => this.navigate('next'));
-      //
-		//  // swipe-left touch event previous image in slides
-		//  this.DOM.addEventListener('swipe-left'), () => this.navigate('prev'));
+      // //swipe-right touch event next image in slides
+      //  document.getElementsByClassName('slide--current').addEventListener('swipe-right', () => this.navigate('next'));
+
+		 // // swipe-left touch event previous image in slides
+		 // document.getElementsByClassName('slideshow_2').addEventListener('swipe-left'), () => this.navigate('prev'));
 
       document.addEventListener('keydown', (ev) => {
         const keyCode = ev.keyCode || ev.which;

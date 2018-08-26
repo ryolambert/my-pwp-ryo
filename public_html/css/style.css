@@ -38,7 +38,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.row {
 	min-height: 100vh;
 	overflow: hidden;
 }
