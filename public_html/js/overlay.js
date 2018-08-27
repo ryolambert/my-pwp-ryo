@@ -2,7 +2,7 @@ class ShapeOverlays {
 	constructor(elm) {
 		this.elm = elm;
 		this.path = elm.querySelectorAll('path');
-		this.numPoints = 10;
+		this.numPoints = 15;
 		this.duration = 900;
 		this.delayPointsArray = [];
 		this.delayPointsMax = 300;
@@ -47,7 +47,7 @@ class ShapeOverlays {
 		let str = '';
 		str += (this.isOpened) ? `M 0 0 V ${points[0]}` : `M 0 ${points[0]}`;
 		for(var i = 0; i < this.numPoints - 1; i++) {
-			const p = (i + 1) / (this.numPoints - 1) * 100;
+			const p = (i + 1) / (this.numPoints - 1) * 150;
 			const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
 			str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
 		}

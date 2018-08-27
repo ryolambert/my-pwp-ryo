@@ -10,6 +10,7 @@
 html {
 	font-size: 62.5%;
 
+
 }
 
 @media (max-width: 75em) {
@@ -36,6 +37,10 @@ body {
 	z-index: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	min-width: 90vw;
 }
 
 .row {
@@ -116,12 +121,20 @@ li {
 .vertical {
 	width: 0;
 	word-wrap: break-word;
-	margin-right: 5rem;
-	margin-left: 2rem;
 	color: #fff;
 }
 
+.set {
+	max-width: 100%;
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .project-heading h1 {
+	position: absolute;
 	position: absolute;
 	/* transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
@@ -185,10 +198,21 @@ li {
 	bottom: 5vh;
 	left: 10vw;
 	font-size: 2rem;
-
-
 }
 
+.scrolling-content {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	height:100%; /*A value other than height:auto needs to be set*/
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	padding: 0;
+	border-radius: 5%;
+}
 
 /** Animations **/
 @-webkit-keyframes moveInLeft {
