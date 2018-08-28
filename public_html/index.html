@@ -58,7 +58,7 @@
 			var e, t = document.createElement("style");
 			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
 		};
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		supportsCssVars() || alert("Please view this webpage in a modern browser that supports CSS Variables.");</script>
 	</head>
 
 	<body class="navMenu scrolling-content">
@@ -261,56 +261,36 @@
 
 				<div id="5" class="container">
 					<div class="row align-items-center justify-content-center">
-						<div class="col-10 col-md-6 col-lg-6 order-1">
-							<form id="rochelles-demo-form" action="php/mailer.php" method="post">
+						<div class="col-12 col-md-6 col-lg-6 order-1">
+							<form id="form" action="php/mailer.php" method="post">
 								<h1>CONTACT</h1>
 								<div class="form-group">
-									<label for="contactDemoName">Name <span class="text-danger">*</span></label>
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"></span>
-											<i class="fas fa-user" aria-hidden="true"></i>
-										</div>
 										<input type="text" class="form-control" id="contactDemoName" name="contactDemoName"
 												 placeholder="Name">
-									</div>
+									</div><!--input-group -->
 								</div>
 								<div class="form-group">
-									<label for="contactDemoEmail">Email <span class="text-danger">*</span></label>
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"></span>
-											<i class="fas fa-envelope" aria-hidden="true"></i>
-										</div>
-										<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail"
+									<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail"
 												 placeholder="Email">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="contactDemoSubject">Subject</label>
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"></span>
-											<i class="fas fa-pencil" aria-hidden="true"></i>
-										</div>
 										<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject"
 												 placeholder="Subject">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="contactDemoMessage">Message <span class="text-danger">*</span></label>
 									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text"></span>
-											<i class="fas fa-comment" aria-hidden="false"></i>
-										</div>
 										<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage"
 													 placeholder="Message (2000 characters max)"></textarea>
 									</div>
 								</div>
 
 								<!-- reCAPTCHA -->
-								<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
+								<div class="g-recaptcha" data-theme="dark" data-sitekey="--YOUR RECAPTCHA SITE KEY--" ></div>
 
 								<button class="btn btn-success" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
 								<button class="btn btn-warning" type="reset"><i class="fas fa-ban"></i> Reset</button>
