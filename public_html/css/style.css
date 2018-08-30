@@ -36,7 +36,6 @@ body {
 	z-index: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow-x: hidden;
 }
 
 .container {
@@ -209,10 +208,11 @@ li {
 }
 
 .scrolling-content {
-	/*overflow-x: hidden;*/
-	/*overflow-y: scroll;*/
+	overflow-x: hidden;
+	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	/*height: 100%; !*A value other than height:auto needs to be set*!*/
+	/* height: 100%; */
 }
 
 img {
@@ -749,9 +749,49 @@ img {
 }
 
 /** Form Styling **/
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 body #form {
 	color: white;
-	background-color: #009edf;
+	background: linear-gradient(-35deg, #dc9b09, #e73c7e, #0e3dd5, #2adf5a);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s ease-in-out infinite;
+	-moz-animation: Gradient 20s ease-in-out infinite;
+	animation: Gradient 20s ease-in-out infinite;
 	border-radius: 5px;
 	width: 100%;
 	padding: 40px;
