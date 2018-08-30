@@ -209,10 +209,10 @@ li {
 }
 
 .scrolling-content {
-	overflow-x: hidden;
-	overflow-y: scroll;
+	/*overflow-x: hidden;*/
+	/*overflow-y: scroll;*/
 	-webkit-overflow-scrolling: touch;
-	height: 100%; /*A value other than height:auto needs to be set*/
+	/*height: 100%; !*A value other than height:auto needs to be set*!*/
 }
 
 img {
