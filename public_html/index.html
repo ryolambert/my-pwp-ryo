@@ -8,12 +8,6 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<style>
-			.sr . {
-				visibility: hidden;
-			}
-		</style>
-
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 				rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -29,23 +23,18 @@
 				rel="stylesheet"/>
 
 		<!-- Link to personal stylized CSS -->
-		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<!--<link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; CSS reset &ndash;&gt;-->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 		<link rel="stylesheet" type="text/css" href="css/slides.css"/>
 		<link rel="stylesheet" type="text/css" href="css/animations.css"/>
 
-		<!-- Scroll Reveal -->
-		<script src="lib/scrollreveal.js"></script>
-		<script>
-			ScrollReveal({
-				scale: 0.85,
-				duration: 1000,
-			});
+		<!-- Animate On Scroll -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
-			document.documentElement.classList.remove('no-js');
-			document.documentElement.classList.add('js');
-		</script>
+		<!--&lt;!&ndash; Normalize Css &ndash;&gt;-->
+		<!--<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/>-->
+
 		<!-- jQuery, Popper.js, then Bootstrap JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -80,7 +69,7 @@
 		supportsCssVars() || alert("Please view this webpage in a modern browser that supports CSS Variables.");</script>
 	</head>
 
-	<body class="navMenu sr">
+	<body class="navMenu scrolling-content">
 		<div class="world" id="1">
 			<div class="hamburger hamburger--navMenu js-hover">
 				<div class="hamburger__line hamburger__line--01">
@@ -138,11 +127,11 @@
 
 		<section class="my-5">
 			<div id="2" class="container">
-				<div class="row align-items-center justify-content-center headline ">
+				<div class="row align-items-center justify-content-center" data-aos="fade-up">
 					<div class="col-12 col-md-5 col-lg-5 order-first mt-1">
 						<img class="img" src="media/images/profile.png">
 					</div>
-					<div class="col-10 col-md-6 col-lg-6 ml-0 order-2 mr-0">
+					<div class="col-10 col-md-6 col-lg-6 order-2">
 						<h1>ABOUT ME</h1>
 						<p> Seven of Nine: I understand the concept of humor. It may not be apparent
 							but I am often amused by human behavior. The Doctor: You heard the man. Run
@@ -160,12 +149,12 @@
 			</div>
 
 			<div id="3" class="container">
-				<div class="row align-items-center justify-content-center headline ">
+				<div class="row align-items-center justify-content-center" data-aos="fade-up">
 
 					<div class="col-1 order-1 pl-1">
 						<h4 class="vertical">デザイン</h4>
 					</div>
-					<div class="col-10 col-md-6 col-lg-6 ml-0 order-2 mr-0">
+					<div class="col-10 col-md-6 col-lg-6 order-2">
 						<h1>DESIGN</h1>
 						<p> Seven of Nine: I understand the concept of humor. It may not be apparent
 							but I am often amused by human behavior. The Doctor: You heard the man. Run
@@ -221,7 +210,7 @@
 			</div>
 
 			<div id="4" class="container">
-				<div class="row align-items-center justify-content-center headline ">
+				<div class="row align-items-center justify-content-center"  data-aos="fade-up">
 					<div class="col-12 col-md-5 col-lg-5 order-1 demo-6">
 						<div class="slideshow_2">
 							<div class="slides slides--images">
@@ -280,8 +269,8 @@
 			</div>
 
 			<div id="5" class="container">
-				<div class="row align-items-center justify-content-center headline ">
-					<div class="col-12 col-md-6 col-lg-6 order-1">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-12 col-md-6 col-lg-6 order-1" data-aos="fade-up">
 						<form id="form" action="php/mailer.php" method="post">
 							<h1>CONTACT</h1>
 							<div class="form-group">
@@ -347,13 +336,14 @@
 				</div>
 			</footer>
 		</section>
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
-			ScrollReveal().reveal('.headline', {
-				delay: 500,
-				useDelay: 'onload',
-				reset: true,
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000,
+
 			});
+
 		</script>
 		<script type="x-shader/x-fragment" id="fragmentShader">
 		precision highp float;
@@ -544,6 +534,7 @@
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
+
 		<script src="js/waves.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/easings.js"></script>

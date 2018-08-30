@@ -9,6 +9,7 @@
 
 html {
 	font-size: 62.5%;
+
 }
 
 @media (max-width: 75em) {
@@ -35,6 +36,7 @@ body {
 	z-index: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 .container {
@@ -123,12 +125,35 @@ li {
 	max-width: 100%;
 }
 
-.nopadding {
-	padding: 0 !important;
-	margin: 0 !important;
+.project-heading h1 {
+	position: absolute;
+	/* transform: translate(0%, -50%);
+	 -moz-transform: translate(0%, -50%);
+	 -webkit-transform: translate(0%, -50%);
+	 -o-transform: translate(0%, -50%);
+	 -ms-transform: translate(0%, -50%);
+	 animation: floatAnim 5s infinite;
+	 -moz-animation: floatAnim 5s infinite;
+	 -webkit-animation: floatAnim 5s infinite;
+	 -o-animation: floatAnim 5s infinite;
+	 -webkit-transform-origin: 0 0;
+	 -ms-transform-origin: 0 0;
+	 transform-origin: 0 0;
+	 -webkit-animation-direction: alternate;
+	 animation-direction: alternate; */
+	bottom: 18vh;
+	left: 10vw;
+	font-size: 4rem;
+	text-transform: uppercase;
+	/*-webkit-animation-name: moveInBottom;*/
+	/*animation-name: moveInBottom;*/
+	/*-webkit-animation-duration: 1s;*/
+	/*animation-duration: 1s;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*animation-timing-function: ease-out;*/
 }
 
-.project-heading h1 {
+.project-heading h4 {
 	position: absolute;
 	/* transform: translate(0%, -50%);
 	 -moz-transform: translate(0%, -50%);
@@ -148,40 +173,12 @@ li {
 	left: 10vw;
 	font-size: 4rem;
 	text-transform: uppercase;
-	-webkit-animation-name: moveInBottom;
-	animation-name: moveInBottom;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-timing-function: ease-out;
-	animation-timing-function: ease-out;
-}
-
-.project-heading h4 {
-	position: absolute;
-	/* transform: translate(0%, -50%);
-	 -moz-transform: translate(0%, -50%);
-	 -webkit-transform: translate(0%, -50%);
-	 -o-transform: translate(0%, -50%);
-	 -ms-transform: translate(0%, -50%);
-	 animation: floatAnim 5s infinite;
-	 -moz-animation: floatAnim 5s infinite;
-	 -webkit-animation: floatAnim 5s infinite;
-	 -o-animation: floatAnim 5s infinite;
-	 -webkit-transform-origin: 0 0;
-	 -ms-transform-origin: 0 0;
-	 transform-origin: 0 0;
-	 -webkit-animation-direction: alternate;
-	 animation-direction: alternate; */
-	bottom: 10vh;
-	left: 10vw;
-	font-size: 4rem;
-	text-transform: uppercase;
-	-webkit-animation-name: moveInBottom;
-	animation-name: moveInBottom;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-timing-function: ease-out;
-	animation-timing-function: ease-out;
+	/*-webkit-animation-name: moveInBottom;*/
+	/*animation-name: moveInBottom;*/
+	/*-webkit-animation-duration: 1s;*/
+	/*animation-duration: 1s;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*animation-timing-function: ease-out;*/
 }
 
 .project-heading h3 {
@@ -200,42 +197,19 @@ li {
 	/*transform-origin: 0 0;*/
 	/*-webkit-animation-direction: alternate;*/
 	/*animation-direction: alternate; *!*/
-	bottom: 5vh;
+	bottom: 8vh;
 	left: 10vw;
 	font-size: 2rem;
-	-webkit-animation-name: moveInBottom;
-	animation-name: moveInBottom;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-timing-function: ease-out;
-	animation-timing-function: ease-out;
-}
-
-.project-heading h1 {
-	position: absolute;
-	/*!* transform: translate(0%, -50%);*/
-	/*-moz-transform: translate(0%, -50%);*/
-	/*-webkit-transform: translate(0%, -50%);*/
-	/*-o-transform: translate(0%, -50%);*/
-	/*-ms-transform: translate(0%, -50%);*/
-	/*animation: floatAnim 5s infinite;*/
-	/*-moz-animation: floatAnim 5s infinite;*/
-	/*-webkit-animation: floatAnim 5s infinite;*/
-	/*-o-animation: floatAnim 5s infinite;*/
-	/*-webkit-transform-origin: 0 0;*/
-	/*-ms-transform-origin: 0 0;*/
-	/*transform-origin: 0 0;*/
-	/*-webkit-animation-direction: alternate;*/
-	/*animation-direction: alternate; *!*/
-	-webkit-animation-name: moveInBottom;
-	animation-name: moveInBottom;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-timing-function: ease-out;
-	animation-timing-function: ease-out;
+	/*-webkit-animation-name: moveInBottom;*/
+	/*animation-name: moveInBottom;*/
+	/*-webkit-animation-duration: 1s;*/
+	/*animation-duration: 1s;*/
+	/*-webkit-animation-timing-function: ease-out;*/
+	/*animation-timing-function: ease-out;*/
 }
 
 .scrolling-content {
+	overflow-x: hidden;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	height: 100%; /*A value other than height:auto needs to be set*/
@@ -250,81 +224,7 @@ img {
 }
 
 /** Animations **/
-@-webkit-keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-10rem);
-		transform: translateX(-10rem);
-	}
 
-	80% {
-		-webkit-transform: translateX(1rem);
-		transform: translateX(1rem);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translate(0);
-		transform: translate(0);
-	}
-}
-
-@keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-10rem);
-		transform: translateX(-10rem);
-	}
-
-	80% {
-		-webkit-transform: translateX(1rem);
-		transform: translateX(1rem);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translate(0);
-		transform: translate(0);
-	}
-}
-
-@-webkit-keyframes moveInRight {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(10rem);
-		transform: translateX(10rem);
-	}
-
-	80% {
-		-webkit-transform: translateX(-1rem);
-		transform: translateX(-1rem);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translate(0);
-		transform: translate(0);
-	}
-}
-
-@keyframes moveInRight {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(10rem);
-		transform: translateX(10rem);
-	}
-
-	80% {
-		-webkit-transform: translateX(-1rem);
-		transform: translateX(-1rem);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translate(0);
-		transform: translate(0);
-	}
-}
 
 @-webkit-keyframes moveInBottom {
 	0% {
@@ -373,26 +273,6 @@ img {
 		-ms-transform: translate(0%, -43%) scale(0.95, 1.05);
 		-webkit-transform-origin: 0 0;
 		transform-origin: 0 0;
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
 	}
 }
 

@@ -52,3 +52,6 @@ twbsconfig.yml
 # Folders to ignore
 node_modules
 js/coverage
+
+#PHP
+mail-config.php
