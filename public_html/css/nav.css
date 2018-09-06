@@ -10,7 +10,6 @@ html {
 
 body {
 	font-family: 'Roboto Mono', monospace;
-	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: #fff;
@@ -196,6 +195,14 @@ a:focus {
 
 .global-menu__item--navMenu.is-opened:nth-of-type(5) {
 	transition-delay: 1.4s;
+}
+
+.global-menu__item--navMenu:nth-of-type(6) {
+	transition-delay: 0.005s;
+}
+
+.global-menu__item--navMenu.is-opened:nth-of-type(6) {
+	transition-delay: 1.5s;
 }
 
 .shape-overlays {
