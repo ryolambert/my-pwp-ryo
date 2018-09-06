@@ -13,8 +13,8 @@
  **/
 
 // your Google reCAPTCHA keys here
-$siteKey = '6LeBrW4UAAAAAC5RgXNsJrx1YUqtJ431jGd_OrWu';
-$secret = '6LeBrW4UAAAAACtCJ7AQqaV11HI4KwiL7g6TpE21';
+$siteKey = '6Ld4iW4UAAAAAOyHR4HQGYpO9NqpsUQXiNJ1XXN9';
+$secret = '6Ld4iW4UAAAAAPnbrH3lR2mDasr7lh064kcPBaTD';
 
 /**
  * attach the recipients to the message
