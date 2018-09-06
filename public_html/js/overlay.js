@@ -84,9 +84,10 @@ class ShapeOverlays {
 	const elmHamburger = document.querySelector('.hamburger');
 	const homeLink = document.querySelector('.link_1');
 	const aboutLink = document.querySelector('.link_2');
-	const designLink = document.querySelector('.link_3');
-	const codeLink = document.querySelector('.link_4');
-	const contactLink = document.querySelector('.link_5');
+	const codeLink = document.querySelector('.link_3');
+	const projectLink = document.querySelector('.link_4');
+	const designLink = document.querySelector('.link_5');
+	const contactLink = document.querySelector('.link_6');
 	const gNavItems = document.querySelectorAll('.global-menu__item');
 	const elmOverlay = document.querySelector('.shape-overlays');
 	const overlay = new ShapeOverlays(elmOverlay);
@@ -144,6 +145,42 @@ class ShapeOverlays {
 		}
 	});
 
+	codeLink.addEventListener('click', () => {
+		if(overlay.isAnimating) {
+			return false;
+		}
+		overlay.toggle();
+		if(overlay.isOpened === true) {
+			elmHamburger.classList.add('is-opened-navi');
+			for(var i = 0; i < gNavItems.length; i++) {
+				gNavItems[i].classList.add('is-opened');
+			}
+		} else {
+			elmHamburger.classList.remove('is-opened-navi');
+			for(var i = 0; i < gNavItems.length; i++) {
+				gNavItems[i].classList.remove('is-opened');
+			}
+		}
+	});
+
+	projectLink.addEventListener('click', () => {
+		if(overlay.isAnimating) {
+			return false;
+		}
+		overlay.toggle();
+		if(overlay.isOpened === true) {
+			elmHamburger.classList.add('is-opened-navi');
+			for(var i = 0; i < gNavItems.length; i++) {
+				gNavItems[i].classList.add('is-opened');
+			}
+		} else {
+			elmHamburger.classList.remove('is-opened-navi');
+			for(var i = 0; i < gNavItems.length; i++) {
+				gNavItems[i].classList.remove('is-opened');
+			}
+		}
+	});
+
 	designLink.addEventListener('click', () => {
 		if(overlay.isAnimating) {
 			return false;
@@ -162,23 +199,6 @@ class ShapeOverlays {
 		}
 	});
 
-	codeLink.addEventListener('click', () => {
-		if(overlay.isAnimating) {
-			return false;
-		}
-		overlay.toggle();
-		if(overlay.isOpened === true) {
-			elmHamburger.classList.add('is-opened-navi');
-			for(var i = 0; i < gNavItems.length; i++) {
-				gNavItems[i].classList.add('is-opened');
-			}
-		} else {
-			elmHamburger.classList.remove('is-opened-navi');
-			for(var i = 0; i < gNavItems.length; i++) {
-				gNavItems[i].classList.remove('is-opened');
-			}
-		}
-	});
 	contactLink.addEventListener('click', () => {
 		if(overlay.isAnimating) {
 			return false;
@@ -198,7 +218,6 @@ class ShapeOverlays {
 	});
 
 }());
-
 // $(document).ready('.link').on('click', function(){
 // 	elmHamburger.classList.remove('is-opened');
 // 	for (var i = 0; i < gNavItems.length; i++) {

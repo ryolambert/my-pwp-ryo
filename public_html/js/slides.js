@@ -45,11 +45,11 @@
       this.init();
     }
     init() {
-      this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slides--images > .slide'));
+      this.DOM.slides = Array.from(this.DOM.el.querySelectorAll('.slides--images > .slider'));
       this.slidesTotal = this.DOM.slides.length;
       this.DOM.nav = this.DOM.el.querySelector('.slidenav');
       this.DOM.titles = this.DOM.el.querySelector('.slides--titles');
-      this.DOM.titlesSlides = Array.from(this.DOM.titles.querySelectorAll('.slide'));
+      this.DOM.titlesSlides = Array.from(this.DOM.titles.querySelectorAll('.slider'));
       this.DOM.nextCtrl = this.DOM.nav.querySelector('.slidenav__item--next');
       this.DOM.prevCtrl = this.DOM.nav.querySelector('.slidenav__item--prev');
       this.current = 0;
@@ -220,4 +220,6 @@
 
   new Slideshow(document.querySelector('.slideshow_2'));
   imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
+
+
 };
