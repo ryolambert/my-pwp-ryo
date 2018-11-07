@@ -614,7 +614,7 @@ li {
 	}
 }
 
-body #form {
+body #contact-style {
 	color: white;
 	background: linear-gradient(-35deg, #dc9b09, #e73c7e, #0e3dd5, #2adf5a);
 	background-size: 400% 400%;
@@ -629,11 +629,11 @@ body #form {
 	box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
-body #form p {
+body #contact-style p {
 	font-size: 1.5em;
 }
 
-body #form button {
+body #contact-style button {
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
@@ -642,37 +642,37 @@ body #form button {
 	font-size: 14px;
 }
 
-body #form .form-group {
+body #contact-style .form-group {
 	margin: 15px auto;
 }
 
-body #form .form-group .input-group {
+body #contact-style .form-group .input-group {
 	border-radius: 5px;
 	-webkit-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
 	-moz-box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
 	box-shadow: -1px 3px 18px 0px rgba(0, 0, 0, 0.35);
 }
 
-body #form .form-group .input-group .input-group-addon {
+body #contact-style .form-group .input-group .input-group-addon {
 	border: none;
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-body #form .form-group .input-group input {
+body #contact-style .form-group .input-group input {
 	padding-left: 10px;
 	font-size: 1.2rem;
 }
 
-body #form .form-group .input-group textarea {
+body #contact-style .form-group .input-group textarea {
 	padding-left: 10px;
 	font-size: 1.2rem;
 }
 
-body #form .form-group .input-group i {
+body #contact-style .form-group .input-group i {
 	color: #009edf;
 }
 
-body #form .form-group input {
+body #contact-style .form-group input {
 	padding: 3px;
 	width: 100%;
 	border: none;
@@ -682,11 +682,11 @@ body #form .form-group input {
 .g-recaptcha {
 	/*justify-content: center !important;*/
 	width: 100%;
-	/*text-align: center !important;*/
+	text-align: center !important;
 	/*text-align: -webkit-center !important;*/
 	/*text-align: -moz-center !important;*/
 	transform: scale(0.77);
-	transform-origin: 50% 50%;
+	/*transform-origin: 50% 50%;*/
 }
 
 /*html.sr .load-hidden {*/

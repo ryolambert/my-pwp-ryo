@@ -65,7 +65,7 @@
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 		<!-- JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
+		<script src="js/form-validate.js" async></script>
 
 		<!-- Google reCAPTCHA -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -178,10 +178,8 @@
 						<p>In terms of coding experience, I started off learning the basics of object-oriented programming
 							with Java in high school. After that I dove head first into html, css, and javascript getting
 							familiar with much of the styling and display of how the DOM works playing with user interactions
-							and animations. I have experience using lots of front-end frameworks and libraries in JS like
-							three.js, particles.js, angular 6, react, bootstrap, materialize, and anime.js. During my
-							experience working through CNM's DeepDive Bootcamp I got to work on developing databases with MySQL
-							and the backend logic with Php 7, making RESTful APIs to hook up to our Angular 6 deployment.</p>
+							and animations. I have experience with front-end frameworks and libraries in JS like
+							three.js, particles.js, angular 6, react, bootstrap, materialize, and anime.js. I also have experience working with MySQL databases, PHP 7.2, RESTful APIs, and Angular 6 to develop web applications.</p>
 						<div class="float-left">
 							<h3>Check Out My Repos/Pens 👇</h3>
 							<div class="social-btns py-5 mb-5">
@@ -286,7 +284,7 @@
 											<div class="card card-cascade wider">
 												<img alt="Card image cap" class="img-fluid img-carousel card-img-top"
 													  src="media/images/7.jpg">
-												<a target="_blank" href="nm-outdoors.io"
+												<a target="_blank" href="https://bootcamp-coders.cnm.edu/~jlambert13/nm-outdoors/public_html/"
 													class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"><i
 													class="fa fa-chevron-right pl-1"></i></a>
 
@@ -311,8 +309,7 @@
 
 											<div class="card-body">
 												<h4 class="card-title">NMSK</h4>
-												<p class="card-text">New Mexican Outdoor Activity Finder Progressive Web App <br/>
-													Stack: Angular 6, Php 7, MySQL, Bootstrap</p>
+												<p class="card-text">New Mexico Shotokan Karate Web Design<br/></p>
 											</div>
 										</div>
 									</div>
@@ -329,8 +326,8 @@
 
 											<div class="card-body">
 												<h4 class="card-title">Mogu Mogu 🍜</h4>
-												<p class="card-text">Some quick example text to build on the card
-													title and make up the bulk of the card's content.</p>
+												<p class="card-text">Local Japanese Restaurant: <br/>
+												Web Design, Video, Images, Social Media, and SEO</p>
 											</div>
 										</div>
 									</div>
@@ -347,17 +344,7 @@
 
 					<div class="col-10 col-md-6 col-lg-6 order-2">
 						<h1>PROJECTS</h1>
-						<p> Seven of Nine: I understand the concept of humor. It may not be
-							apparent
-							but I am often amused by human behavior. The Doctor: You heard the
-							man.
-							Run along. I'll reattach any severed limbs, just don't misplace them.
-							Seven of Nine: [to Janeway] Your attempts to assimilate this drone
-							will
-							fail. You can alter our physiology but you cannot change our nature.
-							We will betray you. We are Borg. B'Elanna Torres: Get some rest,
-							Harry.
-							Harry Kim: You may think you're tougher than everybody else.
+						<p>Here are just a few projects I've worked on as a team member or as a freelancer. Feel free to check any of them out by clicking on the arrow buttons on each card.
 						</p>
 					</div>
 					<div class="col-1 order-3 pr-1">
@@ -417,7 +404,7 @@
 						<h1>DESIGN</h1>
 						<p> I love working with colors and using/developing scripts to make generative art. I'm used libraries
 							like p5.js with Processing to do lots of fun effects like pixel sorting, perlin noise, and
-							vectorizing some of my work below are use these technologies. Along side the technical com
+							vectorizing some of my work below are use these technologies. Along side the technical components, I really enjoy incorporating cognitive, behavioral, and social psychological principles into my design processes for better overall aesthetic appeal and user interactivity.
 						</p>
 						<div class="float-left">
 							<h3>Check Out My Work👇</h3>
@@ -441,10 +428,10 @@
 					<div class="col-12 col-md-6 col-lg-6 order-2">
 						<h1>Hi there! <br/> Great hearing from you!</h1>
 						<p>Let's talk brass tax.</p>
-						<p>Sway funny stories.</p>
+						<p>Swap funny stories.</p>
 						<p>Collaborate!</p>
 					</div>
-					<div class="col-12 col-md-6 col-lg-6 order-2">
+					<div class="col-12 col-md-6 col-lg-6 order-2" id="contact-style">
 						<form id="form" action="php/mailer.php" method="post">
 							<h1>CONTACT</h1>
 							<div class="form-group">
@@ -480,15 +467,15 @@
 							<div class="g-recaptcha" data-sitekey="6Ld4iW4UAAAAAOyHR4HQGYpO9NqpsUQXiNJ1XXN9"></div>
 
 							<button class="btn btn-success" type="submit"> 👍 Send</button>
+
+							<!--empty area for form error/success output-->
+							<div class="col-xs-12 mt-5">
+								<div id="output-area"></div>
+							</div>
 						</form>
+						<!--<div class="col-10 col-md-6 col-lg-6 order-2">-->
 
-						<!--empty area for form error/success output-->
-						<div class="col-xs-12">
-							<div id="output-area"></div>
-						</div>
-						<div class="col-10 col-md-6 col-lg-6 order-2">
-
-						</div>
+						<!--</div>-->
 					</div>
 				</div>
 			</div>
@@ -680,7 +667,6 @@
 
 
 		</script>
-
 		<script type="x-shader/x-vertex" id="vertexShader">
 		// attributes of our mesh
 		attribute vec3 position;
@@ -712,9 +698,7 @@
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
-
 		<script src="js/script.js"></script>
-
 		<script src="js/waves.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/easings.js"></script>
