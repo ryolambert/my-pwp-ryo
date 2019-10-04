@@ -912,3 +912,16 @@ body #contact-style .form-group input {
 	color: black;
 }
 
+hr {
+  position: absolute;
+	width: 90%;
+	height: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 0;
+  background: linear-gradient(-35deg, #dc9b09, #e73c7e, #0e3dd5, #2adf5a, #dc9b09);
+  animation: scroll 100s linear infinite;
+}
+@keyframes scroll { 100% { background-position: 500px 0; } }

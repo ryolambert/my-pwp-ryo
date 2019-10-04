@@ -10,4 +10,5 @@
  */
 {
 	setTimeout(() => document.body.classList.add('render'), 60);
+	console.log(setTimeout(() => document.body.classList.add('render'), 60));
 }
