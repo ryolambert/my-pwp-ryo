@@ -207,7 +207,7 @@ a:focus {
 
 .shape-overlays {
 	width: 100vw;
-	height: 100vh;
+	height: auto;
 	display: block;
   pointer-events: none;
   position: fixed;
@@ -566,5 +566,16 @@ a:focus {
 		right: 0.5em;
 		transform: scale(0.75);
 	}
+
+	.shape-overlays {
+	width: auto;
+	height: 100vh;
+	display: block;
+  pointer-events: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
 
 }
