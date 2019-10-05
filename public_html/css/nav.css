@@ -206,8 +206,7 @@ a:focus {
 }
 
 .shape-overlays {
-  width: auto;
-  height: auto;
+  width: 100vw;
   pointer-events: none;
   position: fixed;
   z-index: 10;
