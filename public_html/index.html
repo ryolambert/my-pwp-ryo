@@ -1,762 +1,605 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <title>Ryo Lambert - Web Dev / Front-End Engineer</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <style>
-      .sr .load-hidden {
-        visibility: hidden;
-      }
-    </style>
+<head>
+  <title>Ryo Lambert - Web Dev / Front-End Engineer</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({
-        scale: 0.85,
-        duration: 1000
-      });
-    </script>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+  <style>
+    .sr .load-hidden {
+      visibility: hidden;
+    }
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+  </style>
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Cutive+Mono|M+PLUS+1p:800|Roboto+Mono:700"
-      rel="stylesheet"
-    />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({
+      scale: 0.85,
+      duration: 1000
+    });
+  </script>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
 
-    <!-- Link to personal stylized CSS -->
-    <!--<link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; CSS reset &ndash;&gt;-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="css/slides.css" />
-    <link rel="stylesheet" type="text/css" href="css/animations.css" />
-    <!--<link rel="stylesheet" type="text/css" href="css/compiled-4.5.9.min.css"/>-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|M+PLUS+1p:800|Roboto+Mono:700"
+    rel="stylesheet" />
 
-    <!-- jQuery, Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Link to personal stylized CSS -->
+  <!--<link rel="stylesheet" href="css/reset.css"> &lt;!&ndash; CSS reset &ndash;&gt;-->
 
-    <!-- jQuery Form, Additional Methods, Validate -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"
-    ></script>
+  <link rel="stylesheet" type="text/css" href="css/nav.css" />
+  <link rel="stylesheet" type="text/css" href="css/slides.css" />
+  <link rel="stylesheet" type="text/css" href="css/animations.css" />
+  <!--<link rel="stylesheet" type="text/css" href="css/compiled-4.5.9.min.css"/>-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- JavaScript Form Validator -->
-    <script src="js/form-validate.js" async></script>
+  <!-- jQuery, Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-    <!-- Google reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- jQuery Form, Additional Methods, Validate -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
-    <!-- IE Redirect -->
-    <script>
-      document.documentElement.className = "js";
-      var supportsCssVars = function() {
-        var e,
-          t = document.createElement("style");
-        return (
-          (t.innerHTML = "root: { --tmp-var: bold; }"),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports("font-weight", "var(--tmp-var)")
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert(
-          "Please view this webpage in a modern browser that supports CSS Variables."
-        );
-    </script>
-  </head>
+  <!-- JavaScript Form Validator -->
+  <script src="js/form-validate.js" async></script>
 
-  <body class="navMenu scrolling-content">
-    <div class="world" id="1">
-      <div class="hamburger hamburger--navMenu js-hover">
-        <div class="hamburger__line hamburger__line--01">
-          <div class="hamburger__line-in hamburger__line-in--01"></div>
-        </div>
-        <div class="hamburger__line hamburger__line--02">
-          <div class="hamburger__line-in hamburger__line-in--02"></div>
-        </div>
-        <div class="hamburger__line hamburger__line--03">
-          <div class="hamburger__line-in hamburger__line-in--03"></div>
-        </div>
-        <div class="hamburger__line hamburger__line--cross01">
-          <div class="hamburger__line-in hamburger__line-in--cross01"></div>
-        </div>
-        <div class="hamburger__line hamburger__line--cross02">
-          <div class="hamburger__line-in hamburger__line-in--cross02"></div>
-        </div>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.16.0/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.16.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.16.0/firebase-performance-compat.js"></script>
+  <!--
+          initialize the SDK after all desired features are loaded, set useEmulator to false
+          to avoid connecting the SDK to running emulators.
+        -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <!-- IE Redirect -->
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this webpage in a modern browser that supports CSS Variables."
+      );
+  </script>
+</head>
+
+<body class="navMenu scrolling-content">
+  <div class="world" id="1">
+    <div class="hamburger hamburger--navMenu js-hover">
+      <div class="hamburger__line hamburger__line--01">
+        <div class="hamburger__line-in hamburger__line-in--01"></div>
       </div>
-      <div class="global-menu">
-        <div class="global-menu__wrap">
-          <a
-            class="global-menu__item global-menu__item--navMenu link_1"
-            href="#1"
-            >HOME</a
-          >
-          <a
-            class="global-menu__item global-menu__item--navMenu link_2"
-            href="#2"
-            >ABOUT</a
-          >
-          <a
-            class="global-menu__item global-menu__item--navMenu link_3"
-            href="#3"
-            >CODING</a
-          >
-          <a
-            class="global-menu__item global-menu__item--navMenu link_4"
-            href="#4"
-            >PROJECTS</a
-          >
-          <a
-            class="global-menu__item global-menu__item--navMenu link_5"
-            href="#5"
-            >DESIGN</a
-          >
-          <a
-            class="global-menu__item global-menu__item--navMenu link_6"
-            href="#6"
-            >CONTACT</a
-          >
-        </div>
+      <div class="hamburger__line hamburger__line--02">
+        <div class="hamburger__line-in hamburger__line-in--02"></div>
       </div>
-
-      <!-- <div class="overlay-wrapper"> -->
-        <svg
-        class="shape-overlays"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMid"
-      >
-        <defs>
-          <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#00c99b" />
-            <stop offset="100%" stop-color="#ff0ea1" />
-          </linearGradient>
-          <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#ffd392" />
-            <stop offset="100%" stop-color="#ff3898" />
-          </linearGradient>
-          <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#050013" />
-            <stop offset="100%" stop-color="#32004a" />
-          </linearGradient>
-        </defs>
-        <path class="shape-overlays__path"></path>
-        <path class="shape-overlays__path"></path>
-        <path class="shape-overlays__path"></path>
-      </svg>
-      <!-- </div> -->
-
-      <div class="project-heading">
-        <h1>Ryo Lambert</h1>
-        <h4>龍　ランバート</h4>
-        <h3>Web Dev / Designer / Front-End Engineer</h3>
+      <div class="hamburger__line hamburger__line--03">
+        <div class="hamburger__line-in hamburger__line-in--03"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross01">
+        <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+      </div>
+      <div class="hamburger__line hamburger__line--cross02">
+        <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+      </div>
+    </div>
+    <div class="global-menu">
+      <div class="global-menu__wrap">
+        <a class="global-menu__item global-menu__item--navMenu link_1" href="#1">HOME</a>
+        <a class="global-menu__item global-menu__item--navMenu link_2" href="#2">ABOUT</a>
+        <a class="global-menu__item global-menu__item--navMenu link_3" href="#3">CODING</a>
+        <a class="global-menu__item global-menu__item--navMenu link_4" href="#4">PROJECTS</a>
+        <a class="global-menu__item global-menu__item--navMenu link_5" href="#5">DESIGN</a>
+        <a class="global-menu__item global-menu__item--navMenu link_6" href="#6">CONTACT</a>
       </div>
     </div>
 
-    <section class="my-5">
-      <div id="2" class="container">
-        <div
-          class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden"
-        >
-          <div class="col-12 col-md-5 col-lg-5 order-first">
-            <img class="img-profile" src="media/images/profile.png" />
+    <!-- <div class="overlay-wrapper"> -->
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <defs>
+        <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#00c99b" />
+          <stop offset="100%" stop-color="#ff0ea1" />
+        </linearGradient>
+        <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ffd392" />
+          <stop offset="100%" stop-color="#ff3898" />
+        </linearGradient>
+        <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#050013" />
+          <stop offset="100%" stop-color="#32004a" />
+        </linearGradient>
+      </defs>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+    </svg>
+    <!-- </div> -->
+
+    <div class="project-heading">
+      <h1>Ryo Lambert</h1>
+      <h4>龍　ランバート</h4>
+      <h3>Web Dev / Designer / Front-End Engineer</h3>
+    </div>
+  </div>
+
+  <section class="my-5">
+    <div id="2" class="container">
+      <div
+        class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden">
+        <div class="col-12 col-md-5 col-lg-5 order-first">
+          <img class="img-profile" src="media/images/profile.png" />
+          <div class="social-btns py-5 mb-5">
+            <a target="_blank" href="https://linkedin.com/in/ryolambert" class="btn linkedin"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-lg-6 order-2 pt-1">
+          <h1>ABOUT ME</h1>
+          <p>
+            It's my mission and passion to utilize today’s technologies in
+            only the most visually captivating, creative, and interactive
+            mediums possible to give your company’s hard work and great ideas
+            the market and profits it deserves. After getting my BS in Psychology and Chemistry,
+            it's given me a uniquely scientific
+            approach and cognitive sciences perspective to web development: iterating upon the
+            fundamentals of
+            human cognition, emotion, and behavior to create digital
+            experiences people enjoy coming back to again and again. I excel
+            in fast-paced environments, working with teams, creative
+            design/problem-solving, and learning on the go. Let’s collaborate
+            and build something!
+          </p>
+        </div>
+        <br />
+        <div class="col-1 order-3 pr-1">
+          <h4 class="vertical">私について</h4>
+        </div>
+      </div>
+      <hr /> <br />
+    </div>
+
+
+    <div id="3" class="container">
+      <div
+        class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden">
+        <div class="col-1 order-1 pl-1">
+          <h4 class="vertical">コード</h4>
+        </div>
+        <div class="col-10 col-md-6 col-lg-6 order-2 pt-1">
+          <h1>CODING</h1>
+          <p>
+            At the moment, I've fallen in love with GraphQL- its implications and integration as a
+            thin data layer abstraction that unifies disparate data sources for use in frontend
+            development. In terms of coding experience, I started off learning the basics of
+            object-oriented programming with Java in high school. After that, I dove headfirst into
+            HTML, CSS, and javascript, getting familiar with customizing DOM styling and
+            functionality playing with user interactions and animations. I have experience with
+            frontend frameworks and libraries in JS like three.js, particles.js, gatsby, bootstrap,
+            tailwinds, materialize, and anime.js. I also have experience working with
+            MySQL/PostgreSQL databases, PHP, CMS systems like Wordpress/Netlify CMS/etc., RESTful
+            APIs, Serverless Deployment(Netlify/Now/Github Pages-Actions), CI/CD(TravisCI), Angular,
+            React, and Vue to develop web applications.
+          </p>
+          <div class="float-left">
+            <h3>Check Out My Repos/Pens 👇</h3>
             <div class="social-btns py-5 mb-5">
-              <a
-                target="_blank"
-                href="https://linkedin.com/in/ryolambert"
-                class="btn linkedin"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 col-lg-6 order-2 pt-1">
-            <h1>ABOUT ME</h1>
-            <p>
-              It's my mission and passion to utilize today’s technologies in
-              only the most visually captivating, creative, and interactive
-              mediums possible to give your company’s hard work and great ideas
-              the market and profits it deserves. After getting my BS in Psychology and Chemistry, it's given me a uniquely scientific
-              approach and cognitive sciences perspective to web development: iterating upon the fundamentals of
-              human cognition, emotion, and behavior to create digital
-              experiences people enjoy coming back to again and again. I excel
-              in fast-paced environments, working with teams, creative
-              design/problem-solving, and learning on the go. Let’s collaborate
-              and build something!
-            </p>
-          </div>
-          <br />
-          <div class="col-1 order-3 pr-1">
-            <h4 class="vertical">私について</h4>
-          </div>
-        </div>
-        <hr /> <br />
-      </div>
-
-
-      <div id="3" class="container">
-        <div
-          class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden"
-        >
-          <div class="col-1 order-1 pl-1">
-            <h4 class="vertical">コード</h4>
-          </div>
-          <div class="col-10 col-md-6 col-lg-6 order-2 pt-1">
-            <h1>CODING</h1>
-            <p>
-             At the moment, I've fallen in love with GraphQL- its implications and integration as a thin data layer abstraction that unifies disparate data sources for use in frontend development. In terms of coding experience, I started off learning the basics of object-oriented programming with Java in high school. After that, I dove headfirst into HTML, CSS, and javascript, getting familiar with customizing DOM styling and functionality playing with user interactions and animations. I have experience with frontend frameworks and libraries in JS like three.js, particles.js, gatsby, bootstrap, tailwinds, materialize, and anime.js. I also have experience working with MySQL/PostgreSQL databases, PHP, CMS systems like Wordpress/Netlify CMS/etc., RESTful APIs, Serverless Deployment(Netlify/Now/Github Pages-Actions), CI/CD(TravisCI), Angular, React, and Vue to develop web applications.
-            </p>
-            <div class="float-left">
-              <h3>Check Out My Repos/Pens 👇</h3>
-              <div class="social-btns py-5 mb-5">
-                <a
-                  target="_blank"
-                  href="https://github.com/ryolambert"
-                  class="btn github"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  target="_blank"
-                  href="https://codepen.io/Relevant_Design/"
-                  class="btn codepen"
-                  ><i class="fab fa-codepen"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-5 col-12 order-last demo-6">
-            <div class="slideshow">
-              <div class="slides slides--images">
-                <div class="slider slide--current">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/angular.svg"
-                    />
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/react.svg"
-                    />
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/mySQL.svg"
-                    />
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/graphql.svg"
-                    />
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/node.svg"
-                    />
-                  </div>
-                </div>
-                <div class="slider">
-                  <div class="slide__img">
-                    <img
-                      class="img-fluid img-carousel"
-                      src="media/icons/html5.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="slides slides--titles">
-                <div class="slider slide--current">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-              </div>
-              <nav class="slidenav">
-                <button class="slidenav__item slidenav__item--prev">
-                  <
-                </button>
-                <span>/</span>
-                <button class="slidenav__item slidenav__item--next">></button>
-              </nav>
+              <a target="_blank" href="https://github.com/ryolambert" class="btn github"><i
+                  class="fab fa-github"></i></a>
+              <a target="_blank" href="https://codepen.io/Relevant_Design/" class="btn codepen"><i
+                  class="fab fa-codepen"></i></a>
             </div>
           </div>
         </div>
-        <hr /> <br />
-      </div>
 
-
-      <div id="4" class="container">
-        <div
-          class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden"
-        >
-          <div class="col-12 col-md-5 col-lg-5 order-1 py-5 my-5">
-            <!--Carousel Wrapper-->
-            <div
-              class="carousel slide carousel-multi-item"
-              data-ride="carousel"
-              data-interval="10000"
-              id="card-carousel"
-            >
-              <!--Controls-->
-              <div class="controls-top text-center">
-                <a
-                  class="btn-floating btn-action"
-                  data-slide="prev"
-                  href="#card-carousel"
-                  ><i class="fa fa-chevron-left"></i
-                ></a>
-                <a class="btn-floating" data-slide="next" href="#card-carousel"
-                  ><i class="fa fa-chevron-right"></i
-                ></a>
+        <div class="col-lg-5 col-md-5 col-12 order-last demo-6">
+          <div class="slideshow">
+            <div class="slides slides--images">
+              <div class="slider slide--current">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/angular.svg" />
+                </div>
               </div>
-              <!--/.Controls-->
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-                <!--First slide-->
-                <div class="carousel-item active">
+              <div class="slider">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/react.svg" />
+                </div>
+              </div>
+              <div class="slider">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/mySQL.svg" />
+                </div>
+              </div>
+              <div class="slider">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/graphql.svg" />
+                </div>
+              </div>
+              <div class="slider">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/node.svg" />
+                </div>
+              </div>
+              <div class="slider">
+                <div class="slide__img">
+                  <img class="img-fluid img-carousel" src="media/icons/html5.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="slides slides--titles">
+              <div class="slider slide--current">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+            </div>
+            <nav class="slidenav">
+              <button class="slidenav__item slidenav__item--prev">
+                < </button>
+                  <span>/</span>
+                  <button class="slidenav__item slidenav__item--next">></button>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <hr /> <br />
+    </div>
+
+
+    <div id="4" class="container">
+      <div
+        class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden">
+        <div class="col-12 col-md-5 col-lg-5 order-1 py-5 my-5">
+          <!--Carousel Wrapper-->
+          <div class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="10000"
+            id="card-carousel">
+            <!--Controls-->
+            <div class="controls-top text-center">
+              <a class="btn-floating btn-action" data-slide="prev" href="#card-carousel"><i
+                  class="fa fa-chevron-left"></i></a>
+              <a class="btn-floating" data-slide="next" href="#card-carousel"><i
+                  class="fa fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <div class="col-12 clearfix">
+                  <div class="card card-cascade wider">
+                    <img alt="Card image cap" class="img-fluid img-carousel card-img-top"
+                      src="media/images/clc.png" />
+                    <a target="_blank" href="https://citylightschurch.netlify.com"
+                      class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2" href=""><i
+                        class="fa fa-chevron-right pl-1"></i></a>
+
+                    <div class="card-body">
+                      <h4 class="card-title">CLC Church 🙏</h4>
+                      <p class="card-text">
+                        Longbeach Church Website: <br />
+                        Tech stack: Wordpress Headless CMS with custom post types, custom built
+                        Gatsby/React setup with integrated search and filtering, and serverless
+                        CI/CD with Netlify hooks deployment by git push/Wordpress post update.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.First Slide -->
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="row">
                   <div class="col-12 clearfix">
                     <div class="card card-cascade wider">
-                      <img
-                        alt="Card image cap"
-                        class="img-fluid img-carousel card-img-top"
-                        src="media/images/clc.png"
-                      />
-                      <a
-                        target="_blank"
-                        href="https://citylightschurch.netlify.com"
-                        class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"
-                        href=""
-                        ><i class="fa fa-chevron-right pl-1"></i
-                      ></a>
+                      <img alt="Card image cap" class="img-fluid img-carousel card-img-top"
+                        src="media/images/7.jpg" />
+                      <a target="_blank" href="https://github.com/HalfMortise/nm-outdoors/"
+                        class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"><i
+                          class="fa fa-chevron-right pl-1"></i></a>
 
                       <div class="card-body">
-                        <h4 class="card-title">CLC Church 🙏</h4>
+                        <h4 class="card-title">🌄 NM-Outdoors</h4>
                         <p class="card-text">
-                          Longbeach Church Website: <br />
-                          Tech stack: Wordpress Headless CMS with custom post types, custom built Gatsby/React setup with integrated search and filtering, and serverless CI/CD with Netlify hooks deployment by git push/Wordpress post update.
+                          New Mexican Outdoor Activity Finder Progressive Web
+                          App <br />
+                          Stack: Angular 6, Php 7, MySQL, Bootstrap
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- /.First Slide -->
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-12 clearfix">
-                      <div class="card card-cascade wider">
-                        <img
-                          alt="Card image cap"
-                          class="img-fluid img-carousel card-img-top"
-                          src="media/images/7.jpg"
-                        />
-                        <a
-                          target="_blank"
-                          href="https://github.com/HalfMortise/nm-outdoors/"
-                          class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"
-                          ><i class="fa fa-chevron-right pl-1"></i
-                        ></a>
+              </div>
+              <!--/.Second slide-->
+              <div class="carousel-item">
+                <!--Third slide-->
+                <div class="col-12 clearfix">
+                  <div class="card card-cascade wider">
+                    <img alt="Card image cap" class="img-fluid img-carousel card-img-top"
+                      src="media/images/nmsk.jpg" />
+                    <a target="_blank" href="https://nmsk.org"
+                      class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"><i
+                        class="fa fa-chevron-right pl-1"></i></a>
 
-                        <div class="card-body">
-                          <h4 class="card-title">🌄 NM-Outdoors</h4>
-                          <p class="card-text">
-                            New Mexican Outdoor Activity Finder Progressive Web
-                            App <br />
-                            Stack: Angular 6, Php 7, MySQL, Bootstrap
-                          </p>
-                        </div>
-                      </div>
+                    <div class="card-body">
+                      <h4 class="card-title">NMSK</h4>
+                      <p class="card-text">
+                        New Mexico Shotokan Karate Web Design<br />
+                      </p>
                     </div>
                   </div>
                 </div>
-                <!--/.Second slide-->
-                <div class="carousel-item">
-                  <!--Third slide-->
-                  <div class="col-12 clearfix">
-                    <div class="card card-cascade wider">
-                      <img
-                        alt="Card image cap"
-                        class="img-fluid img-carousel card-img-top"
-                        src="media/images/nmsk.jpg"
-                      />
-                      <a
-                        target="_blank"
-                        href="https://nmsk.org"
-                        class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"
-                        ><i class="fa fa-chevron-right pl-1"></i
-                      ></a>
+              </div>
+              <!--/.Third slide-->
+              <!--Fourth slide-->
+              <div class="carousel-item">
+                <div class="col-12 clearfix">
+                  <div class="card card-cascade wider">
+                    <img alt="Card image cap" class="img-fluid img-carousel card-img-top"
+                      src="media/images/mogu.PNG" />
+                    <a target="_blank" href="eat-mogumogu.com"
+                      class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2" href=""><i
+                        class="fa fa-chevron-right pl-1"></i></a>
 
-                      <div class="card-body">
-                        <h4 class="card-title">NMSK</h4>
-                        <p class="card-text">
-                          New Mexico Shotokan Karate Web Design<br />
-                        </p>
-                      </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Mogu Mogu 🍜</h4>
+                      <p class="card-text">
+                        Local Japanese Restaurant: <br />
+                        Web Design, Video, Images, Social Media, and SEO
+                      </p>
                     </div>
                   </div>
                 </div>
-                <!--/.Third slide-->
-                <!--Fourth slide-->
-                <div class="carousel-item">
-                  <div class="col-12 clearfix">
-                    <div class="card card-cascade wider">
-                      <img
-                        alt="Card image cap"
-                        class="img-fluid img-carousel card-img-top"
-                        src="media/images/mogu.PNG"
-                      />
-                      <a
-                        target="_blank"
-                        href="eat-mogumogu.com"
-                        class="btn-floating btn-action ml-auto mr-4 mdb-color darken-2"
-                        href=""
-                        ><i class="fa fa-chevron-right pl-1"></i
-                      ></a>
-
-                      <div class="card-body">
-                        <h4 class="card-title">Mogu Mogu 🍜</h4>
-                        <p class="card-text">
-                          Local Japanese Restaurant: <br />
-                          Web Design, Video, Images, Social Media, and SEO
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--/.Fourth slide -->
-
               </div>
-              <!--/.Slides-->
-              <!--Indicators-->
-              <ol class="carousel-indicators carousel-indicators1">
-                <li
-                  class="active"
-                  data-slide-to="0"
-                  data-target="#card-carousel"
-                ></li>
-                <li data-slide-to="1" data-target="#card-carousel" />
-                <li data-slide-to="2" data-target="#card-carousel" />
-                <li data-slide-to="3" data-target="#card-carousel" />
-              </ol>
-              <!--/.Indicators-->
-            </div>
-            <!--/.Carousel Wrapper-->
-          </div>
+              <!--/.Fourth slide -->
 
-          <div class="col-10 col-md-6 col-lg-6 order-2">
-            <h1>PROJECTS</h1>
-            <p>
-              Here are just a few projects I've worked on as a team member or as
-              a freelancer. Feel free to check any of them out by clicking on
-              the arrow buttons on each card.
-            </p>
+            </div>
+            <!--/.Slides-->
+            <!--Indicators-->
+            <ol class="carousel-indicators carousel-indicators1">
+              <li class="active" data-slide-to="0" data-target="#card-carousel"></li>
+              <li data-slide-to="1" data-target="#card-carousel" />
+              <li data-slide-to="2" data-target="#card-carousel" />
+              <li data-slide-to="3" data-target="#card-carousel" />
+            </ol>
+            <!--/.Indicators-->
           </div>
-          <div class="col-1 order-3 pr-1">
-            <h4 class="vertical">プロジェクト</h4>
-          </div>
+          <!--/.Carousel Wrapper-->
         </div>
-        <hr /> <br />
-      </div>
 
-
-      <div id="5" class="container">
-        <div
-          class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden"
-        >
-          <div class="col-12 col-md-5 col-lg-5 order-3 demo-6">
-            <div class="slideshow_2">
-              <div class="slides slides--images">
-                <div class="slider slide--current">
-                  <div
-                    class="slide__img"
-                    style="background-image: url(media/images/I3.jpg)"
-                  ></div>
-                </div>
-                <div class="slider">
-                  <div
-                    class="slide__img"
-                    style="background-image: url(media/images/I6.jpg)"
-                  ></div>
-                </div>
-                <div class="slider">
-                  <div
-                    class="slide__img"
-                    style="background-image: url(media/images/I2.jpg)"
-                  ></div>
-                </div>
-                <div class="slider">
-                  <div
-                    class="slide__img"
-                    style="background-image: url(media/images/chair.gif)"
-                  ></div>
-                </div>
-                <div class="slider">
-                  <div
-                    class="slide__img"
-                    style="background-image: url(media/images/ink.gif)"
-                  ></div>
-                </div>
-              </div>
-              <div class="slides slides--titles">
-                <div class="slider slide--current">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-                <div class="slider">
-                  <h2 class="slide__title"></h2>
-                </div>
-              </div>
-              <nav class="slidenav">
-                <button class="slidenav__item slidenav__item--prev">
-                  <
-                </button>
-                <span>/</span>
-                <button class="slidenav__item slidenav__item--next">></button>
-              </nav>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 col-lg-6 order-2 py-5 my-5">
-            <h1>DESIGN</h1>
-            <p>
-              I love working with colors and using/developing scripts to make
-              generative art. I'm used libraries like p5.js with Processing to
-              do lots of fun effects like pixel sorting, perlin noise, and
-              vectorizing some of my work below are use these technologies.
-              Along side the technical components, I really enjoy incorporating
-              cognitive, behavioral, and social psychological principles into my
-              design processes for better overall aesthetic appeal and user
-              interactivity.
-            </p>
-            <div class="float-left">
-              <h3>Check Out My Work👇</h3>
-              <div class="social-btns py-5 mb-5">
-                <a
-                  target="_blank"
-                  href="https://instagram.com/relevant_design"
-                  class="btn instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                  target="_blank"
-                  href="https://dribbble.com/Relevant_Design"
-                  class="btn dribbble"
-                  ><i class="fab fa-dribbble"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-1 order-1 pl-1">
-            <h4 class="vertical mr-1">デザイン</h4>
-          </div>
+        <div class="col-10 col-md-6 col-lg-6 order-2">
+          <h1>PROJECTS</h1>
+          <p>
+            Here are just a few projects I've worked on as a team member or as
+            a freelancer. Feel free to check any of them out by clicking on
+            the arrow buttons on each card.
+          </p>
         </div>
-        <hr /> <br />
-      </div>
-
-
-      <div id="6" class="container">
-        <div
-          class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden"
-        >
-          <div class="col-12 col-md-6 col-lg-6 order-2">
-            <h1>
-              Hi there! <br />
-              Great hearing from you!
-            </h1>
-            <p>Let's talk brass tax.</p>
-            <p>Swap debugging stories.</p>
-            <p>Collaborate!</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 order-2" id="contact-style">
-            <form id="form" action="php/mailer.php" method="post">
-              <h1>CONTACT</h1>
-              <div class="form-group">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="contactFormName"
-                    name="contactFormName"
-                    placeholder="Name"
-                  />
-                </div>
-                <!--input-group -->
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="contactFormEmail"
-                    name="contactFormEmail"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="contactFormSubject"
-                    name="contactFormSubject"
-                    placeholder="Subject"
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <textarea
-                    class="form-control"
-                    rows="5"
-                    id="contactFormMessage"
-                    name="contactFormMessage"
-                    placeholder="Message (2000 characters max)"
-                  ></textarea>
-                </div>
-              </div>
-
-              <!-- reCAPTCHA -->
-              <div
-                class="g-recaptcha"
-                data-sitekey="6Ld4iW4UAAAAAOyHR4HQGYpO9NqpsUQXiNJ1XXN9"
-              ></div>
-
-              <button class="btn btn-success" type="submit">👍 Send</button>
-
-              <!--empty area for form error/success output-->
-              <div class="col-xs-12 mt-5">
-                <div id="output-area"></div>
-              </div>
-            </form>
-            <!--<div class="col-10 col-md-6 col-lg-6 order-2">-->
-
-            <!--</div>-->
-          </div>
+        <div class="col-1 order-3 pr-1">
+          <h4 class="vertical">プロジェクト</h4>
         </div>
       </div>
+      <hr /> <br />
+    </div>
 
-      <footer class=" mt-5 py-4">
-        <div class="social-btns">
-          <a
-            target="_blank"
-            href="https://twitter.com/_RelevantDesign"
-            class="btn twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://github.com/ryolambert"
-            class="btn github"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://codepen.io/Relevant_Design/"
-            class="btn codepen"
-            ><i class="fab fa-codepen"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://dribbble.com/Relevant_Design"
-            class="btn dribbble"
-            ><i class="fab fa-dribbble"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://linkedin.com/in/ryolambert"
-            class="btn linkedin"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            target="_blank"
-            href="https://instagram.com/relevant_design"
-            class="btn instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
+
+    <div id="5" class="container">
+      <div
+        class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden">
+        <div class="col-12 col-md-5 col-lg-5 order-3 demo-6">
+          <div class="slideshow_2">
+            <div class="slides slides--images">
+              <div class="slider slide--current">
+                <div class="slide__img" style="background-image: url(media/images/I3.jpg)"></div>
+              </div>
+              <div class="slider">
+                <div class="slide__img" style="background-image: url(media/images/I6.jpg)"></div>
+              </div>
+              <div class="slider">
+                <div class="slide__img" style="background-image: url(media/images/I2.jpg)"></div>
+              </div>
+              <div class="slider">
+                <div class="slide__img" style="background-image: url(media/images/chair.gif)"></div>
+              </div>
+              <div class="slider">
+                <div class="slide__img" style="background-image: url(media/images/ink.gif)"></div>
+              </div>
+            </div>
+            <div class="slides slides--titles">
+              <div class="slider slide--current">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+              <div class="slider">
+                <h2 class="slide__title"></h2>
+              </div>
+            </div>
+            <nav class="slidenav">
+              <button class="slidenav__item slidenav__item--prev">
+                < </button>
+                  <span>/</span>
+                  <button class="slidenav__item slidenav__item--next">></button>
+            </nav>
+          </div>
         </div>
-      </footer>
-    </section>
+        <div class="col-10 col-md-6 col-lg-6 order-2 py-5 my-5">
+          <h1>DESIGN</h1>
+          <p>
+            I love working with colors and using/developing scripts to make
+            generative art. I'm used libraries like p5.js with Processing to
+            do lots of fun effects like pixel sorting, perlin noise, and
+            vectorizing some of my work below are use these technologies.
+            Along side the technical components, I really enjoy incorporating
+            cognitive, behavioral, and social psychological principles into my
+            design processes for better overall aesthetic appeal and user
+            interactivity.
+          </p>
+          <div class="float-left">
+            <h3>Check Out My Work👇</h3>
+            <div class="social-btns py-5 mb-5">
+              <a target="_blank" href="https://instagram.com/relevant_design"
+                class="btn instagram"><i class="fab fa-instagram"></i></a>
+              <a target="_blank" href="https://dribbble.com/Relevant_Design" class="btn dribbble"><i
+                  class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 order-1 pl-1">
+          <h4 class="vertical mr-1">デザイン</h4>
+        </div>
+      </div>
+      <hr /> <br />
+    </div>
 
-    <script type="x-shader/x-fragment" id="fragmentShader">
+
+    <div id="6" class="container">
+      <div
+        class="row screen-full my-1 mx-1 align-items-center justify-content-center fade-up load-hidden">
+        <div class="col-12 col-md-6 col-lg-6 order-2">
+          <h1>
+            Hi there! <br />
+            Great hearing from you!
+          </h1>
+          <p>Let's talk brass tax.</p>
+          <p>Swap debugging stories.</p>
+          <p>Collaborate!</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 order-2" id="contact-style">
+          <form id="form" action="php/mailer.php" method="post">
+            <h1>CONTACT</h1>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="contactFormName" name="contactFormName"
+                  placeholder="Name" />
+              </div>
+              <!--input-group -->
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="email" class="form-control" id="contactFormEmail"
+                  name="contactFormEmail" placeholder="Email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="contactFormSubject"
+                  name="contactFormSubject" placeholder="Subject" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <textarea class="form-control" rows="5" id="contactFormMessage"
+                  name="contactFormMessage" placeholder="Message (2000 characters max)"></textarea>
+              </div>
+            </div>
+
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Ld4iW4UAAAAAOyHR4HQGYpO9NqpsUQXiNJ1XXN9"></div>
+
+            <button class="btn btn-success" type="submit">👍 Send</button>
+
+            <!--empty area for form error/success output-->
+            <div class="col-xs-12 mt-5">
+              <div id="output-area"></div>
+            </div>
+          </form>
+          <!--<div class="col-10 col-md-6 col-lg-6 order-2">-->
+
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+
+    <footer class=" mt-5 py-4">
+      <div class="social-btns">
+        <a target="_blank" href="https://twitter.com/ryo_lambert" class="btn twitter"><i
+            class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://github.com/ryolambert" class="btn github"><i
+            class="fab fa-github"></i></a>
+        <a target="_blank" href="https://codepen.io/Relevant_Design/" class="btn codepen"><i
+            class="fab fa-codepen"></i></a>
+        <a target="_blank" href="https://dribbble.com/Relevant_Design" class="btn dribbble"><i
+            class="fab fa-dribbble"></i></a>
+        <a target="_blank" href="https://linkedin.com/in/ryolambert" class="btn linkedin"><i
+            class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://instagram.com/dev_ryo" class="btn instagram"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+  </section>
+
+  <script type="x-shader/x-fragment" id="fragmentShader">
       precision highp float;
 
       uniform float uTime;
@@ -919,7 +762,7 @@
       	gl_FragColor = vec4(col, 1.);
       }
     </script>
-    <script type="x-shader/x-vertex" id="vertexShader">
+  <script type="x-shader/x-vertex" id="vertexShader">
       // attributes of our mesh
       attribute vec3 position;
       attribute vec2 uv;
@@ -942,23 +785,50 @@
       	gl_Position = pos;
       }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/waves.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/easings.js"></script>
-    <script src="js/overlay.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/slides.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/waves.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/easings.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/slides.js"></script>
 
-    <script>
-      ScrollReveal().reveal(".fade-up", {
-        delay: 500,
-        useDelay: "onload",
-        reset: false
-      });
-    </script>
-  </body>
+  <script>
+    ScrollReveal().reveal(".fade-up", {
+      delay: 500,
+      useDelay: "onload",
+      reset: false
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+
+</body>
+
 </html>
